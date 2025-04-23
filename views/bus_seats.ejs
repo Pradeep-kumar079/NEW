@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Divs</title>
+  <style>
+    .selectable {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      background-color: lightblue;
+      display: inline-block;
+      text-align: center;
+      line-height: 100px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .selected {
+      background-color: lightgreen;
+    }
+    .disabled {
+      background-color: grey;
+      pointer-events: none;
+    }
+    .selected-divs {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="selectable" id="div1">Div 1</div>
+  <div class="selectable" id="div2">Div 2</div>
+  <div class="selectable" id="div3">Div 3</div>
+  <div class="selectable" id="div4">Div 4</div>
+
+  <div class="selected-divs">
+    <h3>Selected Divs:</h3>
+    <ul id="selectedDivList"></ul>
+  </div>
+
+  <button id="sendToBackendBtn">Send to Backend</button>
+
+
+
+
+  <script>
+    let selectedDivs = [];
+
+    const divs = document.querySelectorAll('.selectable');
+    const selectedDivList = document.getElementById('selectedDivList');
+    const sendToBackendBtn = document.getElementById('sendToBackendBtn');
+
+    divs.forEach(div => {
+      div.addEventListener('click', () => {
+        if (div.classList.contains('selected')) {
+          div.classList.remove('selected');
+          selectedDivs = selectedDivs.filter(selected => selected !== div.id);
+        } else {
+          div.classList.add('selected');
+          selectedDivs.push(div.id);
+        }
+
+        divs.forEach(d => {
+          if (selectedDivs.includes(d.id)) {
+            d.classList.add('disabled');
+          } else {
+            d.classList.remove('disabled');
+          }
+        });
+
+        updateSelectedDivList();
+      });
+    });
+
+    function updateSelectedDivList() {
+      selectedDivList.innerHTML = '';
+      selectedDivs.forEach(id => {
+        const li = document.createElement('li');
+        li.textContent = id;
+        selectedDivList.appendChild(li);
+      });
+    }
+
+    sendToBackendBtn.addEventListener('click', async () => {
+      if (selectedDivs.length === 0) {
+        alert('No divs selected.');
+        return;
+      }
+
+      const response = await fetch('/sendSelectedDivs', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ selectedDivs }),
+      });
+
+      if (response.ok) {
+        alert('Data sent to backend successfully!');
+      } else {
+        alert('Error sending data to backend');
+      }
+    });
+  </script>
+</body>
+</html>

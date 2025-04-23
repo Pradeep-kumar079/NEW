@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .review-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-title {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .review {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .review:last-child {
+            border-bottom: none;
+        }
+
+        .review img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .review-content {
+            flex: 1;
+        }
+
+        .review-content h4 {
+            margin: 0;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .review-content p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .stars {
+            color: #f4c150;
+        }
+
+        .add-review {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .add-review textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            resize: none;
+            font-size: 14px;
+        }
+
+        .add-review button {
+            margin-top: 10px;
+            background: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .add-review button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+  <form action="/kk" method="POST">
+
+ 
+    <div class="review-container">
+        <div class="review-title">Customer Reviews</div>
+
+        <!-- Review 1 -->
+        <div class="review">
+            <img src="https://via.placeholder.com/50" alt="User Image">
+            <div class="review-content">
+                <h4>John Doe <span class="stars">★★★★★</span></h4>
+                <p>Excellent service! Highly recommend.</p>
+            </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review">
+            <img src="https://via.placeholder.com/50" alt="User Image">
+            <div class="review-content">
+                <h4>Jane Smith <span class="stars">★★★★☆</span></h4>
+                <p>Good experience, but there is room for improvement.</p>
+            </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review">
+            <img src="https://via.placeholder.com/50" alt="User Image">
+            <div class="review-content">
+                <h4>Emily Johnson <span class="stars">★★★★★</span></h4>
+                <p>Fantastic! Will use the service again.</p>
+            </div>
+        </div>
+
+        <!-- Add Review -->
+        <div class="add-review">
+            <textarea rows="4" placeholder="Write your review here..."></textarea>
+            <button>Submit Review</button>
+        </div>
+    </div>
+
+  </form>
+</body>
+</html>

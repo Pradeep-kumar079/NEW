@@ -1,0 +1,768 @@
+ *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ 
+ 
+ }
+ 
+.accounts-content{
+  height: auto;
+  width: 120px;
+  padding: 4px;
+  display: block;
+  border: 1px solid black;
+  display: none;
+  
+
+
+}
+.navbar{
+ 
+height: 70px;
+box-shadow: rgba(214, 141, 141, 0.24) 0px 3px 8px !important;
+}
+
+.container{
+  display: flex;
+  width: 100% !important;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  position: relative;
+  padding-top: 8px;
+  
+}
+#box{
+  height: 50px;
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin-right: 30px;
+  padding: 4px;
+  position: relative;
+  text-align: center;
+  
+}
+.img{
+  position: absolute;
+  left: 5px;
+
+
+}
+.bus_tickets{
+  
+  margin-right: 100px !important;
+  background: rgb(96,91,91);
+background: linear-gradient(90deg, rgba(96,91,91,1) 0%, rgba(223,179,113,0.9949229691876751) 0%, rgba(203,93,93,1) 0%, rgba(51,128,178,1) 0%, rgba(232,89,89,1) 0%) !important;
+width: 120px !important;
+border: 1px solid red !important;
+border-radius: 5px;
+
+}
+.bus_tickets p{
+  text-align: center !important;
+padding-left: 5px;
+padding-top: 5px;
+font-size: large;
+color: #fff;
+}
+.bus_tickets a{
+  text-decoration: none;
+  color: #fff;
+}
+.help {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  
+
+}
+.help:hover{
+  background: darken( 10%);
+}
+.help i{
+  margin-top: 2px;
+  font-size: 18px;
+}
+.help p{
+  text-align: center !important;
+  margin-left: 6px !important;
+  font-size: large !important;
+  margin-top: 5px !important;
+}
+.lang{
+  font-size: large;
+}
+.accounts{
+  font-size: large;
+}
+.mystyle {
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+}
+.accounts i{
+  margin-right: 6px;
+}
+.register{
+  font-size: large;
+}
+.logout{
+  font-size: large;
+}
+/* this is for search body*/
+.wrapper{
+  height: 500px;
+  width: 100%;
+  background: rgb(96,91,91);
+  background: linear-gradient(90deg, rgba(96,91,91,1) 0%, rgba(223,179,113,0.9949229691876751) 0%, rgba(203,93,93,1) 0%, rgba(51,128,178,1) 0%, rgba(232,89,89,1) 0%) !important;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper h2{
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-weight: 1000px;
+  padding: 20px;
+}
+.search_body{
+  height: 150px;
+  width: 700px;
+  margin-top: 70px;
+  margin-left: 300px;
+  background-color: #fff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px !important;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  
+}
+.search_body i{
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top: 35px;
+ 
+}
+.from{
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#from{
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+.to{
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 10px;
+
+}
+#to{
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+.date{
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 10px;
+
+}
+#date{
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+.search_buses{
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 18px;
+  background: rgb(96,91,91);
+  background: linear-gradient(90deg, rgba(96,91,91,1) 0%, rgba(223,179,113,0.9949229691876751) 0%, rgba(203,93,93,1) 0%, rgba(51,128,178,1) 0%, rgba(232,89,89,1) 0%) !important;
+  color: #fff;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 8px;
+  padding: 4px;
+  
+}
+/* ------this is offer section --------*/
+.offers_wrapper{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  
+}
+.offer_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+.offer_container h2{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.offers_wrapper i{
+  font-size: 60px;
+  margin-top: 150px;
+}
+.offers{
+  height: 300px;
+  width: 80%;
+  background-color: pink;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 6px;
+}
+.card{
+  height: 250px;
+  width: 250px;
+  border: 1px solid black;
+  margin: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  color: #fff;
+ 
+}
+#offer1{
+  background-image: linear-gradient(71.04deg, rgb(24, 125, 151) -6.92%, rgb(109, 213, 237) 109.43%);
+}
+#offer2{
+background-image: linear-gradient(71.04deg, rgb(206, 119, 0) -6.92%, rgb(255, 194, 111) 109.43%);
+}
+#offer3{
+background-image: linear-gradient(71.04deg, rgb(134, 0, 62) -6.92%, rgb(210, 81, 141) 109.43%);
+}
+#offer4{
+  background-image: linear-gradient(71.04deg, rgb(63, 43, 150) -6.92%, rgb(168, 192, 255) 109.43%);
+}
+.symols{
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+ 
+}
+.desc{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.coupon{
+  height: auto;
+  width: 60px;
+  padding: 3px;
+  border: 1px  dotted black;
+}
+.footer{
+  height: 350px;
+  width: 100%;
+  border: 1px solid rgba(232,89,89,1);
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.footer_container{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#footer_content{
+  height: auto;
+  width: 200px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+
+}
+#footer_content h2{
+  margin-bottom: 10px;
+}#footer_content h2 ul li{
+  margin-bottom: 10px;
+  text-decoration: none;
+  margin-left: 30px;
+}
+.bus_container{
+  height: auto;
+  width: 600px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 450px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 6px;
+}
+.bus_wrapper{
+  height: auto;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.bus_form{
+  display: flex;
+  flex-direction: column;
+
+}
+.bus_form h2{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  
+  color: linear-gradient(90deg, rgba(96,91,91,1) 0%, rgba(223,179,113,0.9949229691876751) 0%, rgba(203,93,93,1) 0%, rgba(51,128,178,1) 0%, rgba(232,89,89,1) 0%) !important;
+}
+.bus_form input{
+  height: 30px;
+  width: 500px;
+  margin-top: 20px;
+  
+}
+.btn{
+  background: rgb(96,91,91);
+  background: linear-gradient(90deg, rgba(96,91,91,1) 0%, rgba(223,179,113,0.9949229691876751) 0%, rgba(203,93,93,1) 0%, rgba(51,128,178,1) 0%, rgba(232,89,89,1) 0%) !important;
+  color: #fff;
+  margin-top: 50px;
+  height: 30px;
+  width: 120px;
+  margin-left: 200px;
+}
+.details{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  padding: 5px;
+}
+.travel_wrapper{
+  height: 150px;
+  width: 100%;
+  border:  1px solid  rgba(232,89,89,1);
+  border-radius: 3px;
+  padding: 5px;
+   
+  box-shadow: 2px 4px 8px black;
+  transition: 1.5s;
+  border-radius: 6px;
+}
+.travel_wrapper:hover{
+  box-shadow: 10px 10px 16px rgb(96, 95, 95);
+ }
+.title{
+  text-align: center;
+  color:  rgba(232,89,89,1) ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5px;
+  
+  
+}
+.routes{
+  display: flex;
+  flex-direction: row;
+  
+  margin-left: 50px;
+  margin-top: 40px;
+}
+.routes p{
+  margin-left: 30px;
+  font-size: 17px;
+  margin-top: 20px;
+  position: relative;
+
+
+}
+
+.content_container{
+height: auto;
+width: 100%;
+display: flex;
+flex-direction: row;
+margin-bottom: 400px;
+}
+   
+.knowledge{
+  height: auto;
+  width: 350px;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.details_navbar{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.details{
+  height: 50px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding-left: 10px;
+
+}
+.bus_ticket_booking{
+  position: absolute;
+  right: 40px;
+  height: 35px;
+  width: 100px;
+  border: 1px solid red;
+  background-color:  rgba(232,89,89,1)  ;
+  color: #fff;
+}
+.include_footer{
+  height: auto;
+  width: 100%;
+  position: absolute;
+  bottom: -1;
+  margin-top: 3px;
+}
+.userdetails{
+  height: auto;
+  width: 400px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin-left: 550px;
+  padding: 5px;
+  position: relative;
+}
+.userdetails input{
+  height: 30px;
+  width: 250px;
+}
+.userdetails h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+ 
+.radio{
+display: flex;
+flex-direction: row;
+
+}
+.radio input{
+  font-size: -6px;
+}
+.reset_btn{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.reset_btn p{
+  margin-right: 20px ;
+}
+.conform_ticket{
+  margin-top: 20px;
+  height: 30px;
+  color: #fff;
+  background-color:  rgba(232,89,89,1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  
+  border-radius: 2px;
+}
+.login_wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.design{
+  height: 300px;
+  width: 100%;
+  background: rgb(96,91,91);
+  background: linear-gradient(90deg, rgba(96,91,91,1) 0%, rgba(223,179,113,0.9949229691876751) 0%, rgba(203,93,93,1) 0%, rgba(51,128,178,1) 0%, rgba(232,89,89,1) 0%) !important;
+  border-radius: 24% 24% 100% 0% / 0% 0% 99% 87%;
+}
+#login_box{
+  height: auto;
+}
+.login_box{
+  height: 300px;
+  width: 500px;
+  border: 1px solid black;
+  margin-left: 500px;
+  border-radius: 5px;
+  justify-items: center;
+  position: absolute;
+  top: 200px;
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+}
+.login_box i{
+  position: absolute;
+  right: 3px;
+  top: 0;
+  font-size: 16px;
+  padding: 5px;
+  padding-bottom: 10px;
+
+}
+.login_box h2{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.login_box input{
+  margin-bottom: 20px;
+  height: 30px;
+  line-height: 30px;
+
+}
+#name{
+   
+  border: none;
+  border-bottom: 1px solid black;
+
+}
+
+#password{
+  border: none;
+  margin-right: 40px;
+  border-bottom: 1px solid black;
+
+}
+#tel{
+  border: none;
+  margin-right: 40px;
+  border-bottom: 1px solid black;
+
+}
+#otp{
+  border: none;
+  margin-right: 40px;
+  border-bottom: 1px solid black;
+
+}
+#re_password{
+  border: none;
+  border-bottom: 1px solid black;
+
+}
+#mobile_no{
+  border: none;
+  border-bottom: 1px solid black;
+
+}
+.subdivs{
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+ 
+}
+.subdivs a{
+  text-decoration: none;
+}
+.login_submit{
+  height: 30px;
+  width: 100px;
+  letter-spacing: 1px;
+  background-color:  rgba(232,89,89,1);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+}  
+
+/*div:hover {
+  animation-play-state: paused;
+}*/
+#scroll-container {
+  height: 200px;
+  width: 100%;
+ 
+  margin-top: 30px;
+ 
+}
+#scroll-text h1{
+  color: #fff;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+  
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+
+/*---------forgot form */
+.forgot_form{
+  height: auto;
+  width: 600px;
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 500px;
+  position: relative;
+ 
+   
+}
+.forgot_form h3{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.forgot_form input{
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 2px;
+  
+
+}
+.forgot_form #name{
+  margin-left: 2px;
+}
+#f_btn{
+  margin-left: 150px;
+}
+ 
+/*-----------------user fill details in form--------------*/
+.userformdetails{
+  height: auto;
+  width: 800px;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
+  border-radius: 4px;
+  margin-left: 400px;
+  margin-top: 20px;
+  margin-top: 30px;
+  
+}
+#genders{
+  margin-top: 50px;
+}
+.conform_btn{
+  height: 40px;
+  width: 150px;
+  margin-left: 300px !important;
+  margin-bottom: 5px;
+  background-color:  rgba(232,89,89,1) !important;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+}
+
+/*----------------------this is for bus_seats----------------*/
+.informations{
+  height: auto;
+  width: 600px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  margin-left: 450px;
+  padding: 20px;
+  padding-top: 4px;
+  
+}
+.radiobtn{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.informations input{
+  margin-top: 10px;
+  height: 30px;
+  width: auto;
+}
+.informations label{
+  margin-top: 20px;
+}
+.informations h2{
+  text-align: center;
+}
+.paymentbtn{
+  height: 30px;
+  width: 100px;
+  margin-left: 225 px;
+  margin-top: 20px;
+  border-radius: 4px;
+  border: none;
+  color: aliceblue;
+  background-color: rgb(56, 227, 56);
+}
+.fullname{
+  width: 150px;
+}
+ 
+ 

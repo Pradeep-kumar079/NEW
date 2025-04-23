@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--  --------------------    this is a action form  for display required vechicles ---------------------->
+  <form class="vechicledisplayform" action="/showvechicles" method="POST">
+    <!----------  this is navbar-->
+    <%- include('navbar.ejs') -%> 
+     <!------------------          this is a main div container------------------------------>
+    <div class="content_container">
+      <!---------------------- this is about seats and extra information about vechicle-------------->
+    <div class="knowledge">
+      Vehicle Booking Management systems streamline the process of reserving and managing vehicle rentals for various purposes such as transportation, logistics, or travel. These systems provide an efficient platform to manage bookings, vehicle availability, customer data, and payment transactions. By integrating technologies such as databases, web interfaces, and APIs, they enhance user experience through features like real-time availability checks, automated booking confirmations, and route planning.
+      Key functionalities include user registration, vehicle catalog browsing, reservation scheduling, and administrative tools for tracking vehicle usage, maintenance schedules, and performance metrics. Advanced implementations incorporate dynamic pricing, multi-platform support, and analytics for business insights.
+    </div>
+<!------------------------this is about detaild navbar for user understanding------------------>
+   <div class="details_navbar">
+   <!----------------------- these are details about buses--------------------->
+    <div class="details">
+      <h3>Buses Found</h3>
+      <div class="departure">
+        <h3>
+          Departure
+        </h3>
+      </div>
+      <div class="duration">
+        <h3>
+          Duration
+        </h3>
+      </div>
+      <div class="arrival">
+        <h3>
+          Arrival
+        </h3>
+      </div>
+      <div class="ratings">
+      <h3> Ratings</h3>
+      </div>
+      <div class="amount">
+        <h3>Fare</h3>
+      </div>
+    </div>
+
+    <!---------------- this is fetching data or buses from databases if buses are present------------>
+
+    
+
+
+
+      
+  
+    <% for(rides of findrides){ %>
+  
+      <div class="travel_wrapper">
+        <div class="title">
+          <h2>
+            Travels: <%= rides.v_name %>
+          </h2>
+          <div class="departure_time">
+            <%= rides.departure_time  %> </p>
+          </div>
+          <div class="duration_time">
+            <%= rides.Duration %>
+          </div>
+          <div class="arrival_time">
+            <%= rides.Arrival_time  %> </p>
+          </div>
+          <div class="star_rating">
+            <%= rides.Rating  %> </p>
+          </div>
+          <div class="fare">
+            Starts from:<%= rides.Amount  %> </p>
+          </div>
+        </div>
+       
+        <div class="routes">
+          <p>   From:<%= rides.from  %> </p>
+        <p> To:<%= rides.to %> </p>
+        <button class="bus_ticket_booking"> Book Ticket</button>
+        </div>
+        <button class="review" style="text-align: center; text-decoration:none; margin-left:350px;"> <a href="http://localhost:3000/kk"> Reviews</a> </button>
+      
+      </div>
+     
+    <%  } %>  
+<!-----------fetch is ending-->
+  </form>
+</div>
+</div>
+
+<div class="include_footer">
+  <%- include('footer.ejs') -%> 
+</div>
+
+</body>
+</html>
+

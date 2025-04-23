@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form class="usertravelform" action="/details"  method="POST">
+
+ 
+
+<div class="informations">
+  <h2>Fill Details</h2>
+  <label for="name"> Full Name:</label>
+  <input type="text" class="fullname"  name="name" required>
+  <label for="tel"> Mobile-No:</label>
+  <input type="tel" class="tel"   name="tel" required>
+
+  <div class="radiobtn">
+  
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+      <label class="form-check-label" for="exampleRadios1">
+        Male
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios2">
+        Female
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+      <label class="form-check-label" for="exampleRadios3">
+        Others
+      </label>
+    </div>
+</div>
+
+   
+    <div class="selectedseat">  
+ 
+  <h3> Seat No:<%= selected_seat.selected_seats  %></h3>
+  
+
+    </div>
+
+    
+  
+
+ 
+
+  <%id.Amount %>
+ 
+
+
+ 
+<label for="name"> Boarding_Point:</label> 
+  <input type="text" class="boarding_point" id="boarding_point" name="boarding_point" required>
+  <label for="dropping_point"> Dropping_Point:</label>
+  <input type="text" class="dropping_point" id="dropping_point" name="dropping_point" required>
+   
+
+  <button class="paymentbtn">Go To Pay</button>
+  
+</div>
+
+</form>
+</body>
+</html>

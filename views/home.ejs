@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home_page</title>
+  <link rel="stylesheet" href="style.css">
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+ 
+<body>
+
+
+
+  <!--- this is a navbar-->
+
+   <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+
+
+      <div class="img" id="box">   
+            <h2>Travels</h2>
+      </div>
+
+      
+      <div class="bus_tickets" id="box" style="margin-right: 200px;">
+        
+        <p> <a href="/busbook"> Bus Tickets</a></p>
+
+       
+      </div>
+    
+
+      <div class="help" id="box">
+        <i class="fa-solid fa-phone"></i>
+        <p> <a href="#">Help</a></p>
+      </div>
+
+      
+<!--    <div class="lang" id="box">
+  
+        <label for="lang"></label>
+
+        <select name="lang" id="lang">
+          <option value="english">English</option>
+          <option value="kannada">Kannada</option>
+          <option value="hindi">Hindi</option>
+          
+        </select>
+  
+      </div>
+      
+      
+        <i class="fa-solid fa-user"></i>
+         <button class="acc-btn">Accounts</button>
+         <div class="accounts-content">
+          <li> <a href="#"> Profile</a></li>
+          <li> <a href="#"> Cancel Ticket</a></li>
+          <li> <a href="#"> My Ticket</a></li>
+          <li> <a href="#"> Change Date</a></li>
+         </div>
+      
+-->  
+<div class="accounts" id="box" onclick="myFunction()" id="myDIV">
+  <button > <a href="http://localhost:3000/ticketcancel"> Cancel</a></button>
+
+</div>
+          
+
+      
+
+      <div class="register" id="box">
+        <a href="http://localhost:3000/register">Register</a>
+      </div>
+
+      <div class="logout" id="box">
+        <a href="http://localhost:3000/login">Log out</a>
+      </div>
+      <div class="Admin" id="box">
+        <button> <a href="/login">Admin</a></button>
+      </div>
+      <div class="bus_tickets" id="box" style="text-align: center;">
+         <p> <a href="/parcel"> Parcel</a></p>
+      </div>
+      
+    </div>
+  </nav>
+   
+   
+
+  
+  <div  class="wrapper">
+    
+    <form action="/travelsearchdetails"  method="POST">
+      <h2> Welcome  <%= check.name %>  Enjoy Our Services ,Online Bus Ticket Booking Site.</h2>
+
+      
+    <div class="search_body">
+      <div class="from">
+        <input type="text" placeholder="FROM" class="from" name="from"  id="from" required>
+      </div>
+      
+      <div class="icon"> <i class="fa-solid fa-shuffle"></i></div>
+
+      <div class="to">
+        <input type="text" placeholder="TO" class="to" name="to"   id="to" required>
+      </div>
+      <div class="date">
+        <input type="date" placeholder="To" class="date" name="date"   id="date" required>
+      </div>
+
+      <button  class="search_buses">Search Buses</button>
+    </div>
+  </form>
+</div>
+
+<form action="/offers" method="GET">
+
+  <div class="offers_wrapper">
+    <i class="fa-solid fa-chevron-left"></i>
+    <div class="offer_container">
+
+      <h2>TRENDING OFFERS</h2>
+    <div class="offers ">
+<!-----------   this is card1--------->
+      <div class="card" id="offer1">
+        <div class="symols">
+          
+        </div>
+        <div class="desc">
+          <h3>Save upto Rs 250 on first booking.</h3>
+          <div class="coupon">CTUP47</div>
+        </div>
+      </div>
+<!-----------   this is card2--------->
+
+      <div class="card" id="offer2">
+        <div class="symols">
+          
+        </div>
+        <div class="desc">
+          <h3>Save upto Rs 300 using G-pay</h3>
+          <div class="coupon">KT6FO7</div>
+        </div>
+      </div>
+<!-----------   this is card3--------->
+      <div class="card" id="offer3">
+        <div class="symols">
+          
+        </div>
+        <div class="desc">
+          <h3>Save upto RS 150 by referal </h3>
+          <div class="coupon">TKUJ47</div>
+        </div>
+      </div>
+       
+      <!-----------   this is card4--------->
+      <div class="card" id="offer4">
+        <div class="symols">
+          
+        </div>
+        <div class="desc">
+          <h3>save 25% up to RS 100 </h3>
+          <div class="coupon">LK8GUB</div>
+        </div>
+      </div>
+       
+    </div>
+    </div>
+      
+
+  
+   
+    <i class="fa-solid fa-chevron-right"></i>
+  </div>
+</form>
+  <div class="footer">
+    <div class="footer_container">
+
+    
+    <div class="logo" id="footer_content">
+      <h2>Logo</h2>
+      <p>A Vehicle Booking System is a digital platform that enables users to search, select, and book vehicles for rental. It streamlines operations with features like real-time availability, secure payment integration, and GPS tracking. This system enhances customer convenience and operational efficiency for businesses offering rental or transportation services.</p>
+    </div>
+
+    <div class="about_bus"  id="footer_content">
+      <h2>About Bus</h2>
+      <ul>
+        <li><a href="/about"> About us</a></li>
+        <li><a href="#"> Offers</a></li>
+        <li><a href="#"> coupons</a></li>
+        <li><a href="#"> My Profile</a></li>
+        
+      </ul>
+    </div>
+
+    <div class="usefull_links"  id="footer_content">
+      <h2>Usefull Links</h2>
+      <ul>
+        <li><a href="#"> Bus booking</a></li>
+        <li><a href="#"> Taxi booking</a></li>
+        <li><a href="#"> Bus booking</a></li>
+      </ul>
+    </div>
+
+    <div class="info"  id="footer_content">
+      <h2>Info</h2>
+      <ul>
+        <li><a href="/bus_agent_registration"> Agent Registration</a></li>
+        <li><a href="#"> Terms & Conditions</a></li>
+        <li><a href="#"> Privacy Policy</a></li>
+        <li><a href="#"> FAQ</a></li>
+        
+      </ul>
+    </div>
+
+    <div class="contact_us"  id="footer_content">
+      <h2>contact us</h2>
+      <ul>
+        <li><a href="#"> +91 9353198519</a></li>
+        <li> <a><i class="fa-brands fa-square-whatsapp"> </i> Whatsapp</a></li>
+        <li><a href="#"><i class="fa-brands fa-square-twitter"> </i> Twitter</a></li>
+        <li><a href="#"> <i class="fa-brands fa-square-instagram"> </i> Instagram</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <hr />
+  <div class="copyright">
+
+    &copy; 2024 RedBus india pvt Ltd.All rights are reserved
+
+  </div>
+
+  </div>
+  
+  <script>
+    const accounts = document.getElementById("box");
+     
+  </script>
+
+ 
+</body>
+</html>
